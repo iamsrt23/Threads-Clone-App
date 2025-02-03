@@ -1,8 +1,8 @@
 import { Flex } from '@chakra-ui/react';
-import { useState } from 'react';
 
-const Actions = () => {
-    const [liked,setLiked] = useState(false)
+
+const Actions = ({liked,setLiked}) => {
+    
   return (
     <Flex gap={3} my={2} onClick={(e) => e.preventDefault()}>
       {/* Like Icon */}
